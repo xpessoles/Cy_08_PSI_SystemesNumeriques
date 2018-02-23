@@ -253,7 +253,8 @@ Ces codeurs sont utilisés pour mesurer les déplacements des axes sur les machi
 \end{center}
 \end{minipage}
 
-\begin{exemple}
+\begin{exemple} ~\\
+
 \begin{minipage}[c]{.75\linewidth}
 
 La résolution d'un codeur incrémental peut varier de 1 000 à 25 000 impulsions par tour pour des fréquences de rotation allant jusqu'à 10 000 tr/min.
@@ -378,7 +379,8 @@ Un système logique combinatoire est un système binaire pour lequel à un état
 Un système logique est dit séquentiel si les sorties $S_j$ ne dépendent pas uniquement des $E_i$.
 \end{defi}
 
-\begin{exemple}
+\begin{exemple} ~\\
+
 \begin{center}
 \includegraphics[width=.9\textwidth]{images/fig_09}
 \end{center}
@@ -525,81 +527,23 @@ Fonction OU.
 
 \subsubsection{Propriétés des opérateurs de base de l'algèbre de Boole}
 
-\begin{prop}
-\textbf{Commutativité}
+\begin{prop} ~\\
 
-\begin{minipage}[c]{.45\linewidth}
-$$ a+b = b+a$$
-\end{minipage}\hfill
-\begin{minipage}[c]{.45\linewidth}
-$$ a\cdot b = b\cdot a$$
-\end{minipage}
-
-\textbf{Distributivité}
-
-\begin{minipage}[c]{.45\linewidth}
-$$ a\cdot (b+c) = a\cdot b+a \cdot c$$
-\end{minipage}\hfill
-\begin{minipage}[c]{.45\linewidth}
-$$ a+(b\cdot c) = (a+b) \cdot (a+c)$$
-\end{minipage}
-
-\textbf{Associativité}
-
-\begin{minipage}[c]{.45\linewidth}
-$$ a + (b+c) = (a+b)+c = a+b+c$$
-\end{minipage}\hfill
-\begin{minipage}[c]{.45\linewidth}
-$$ a \cdot (b\cdot c) = (a\cdot b)\cdot c = a \cdot b\cdot c$$
-\end{minipage}
-
-\textbf{Élément neutre}
-
-\begin{minipage}[c]{.45\linewidth}
-$$ a + 0 = a$$
-\end{minipage}\hfill
-\begin{minipage}[c]{.45\linewidth}
-$$ a\cdot 1 = a$$
-\end{minipage}
-
-\textbf{Élément absorbant}
-
-\begin{minipage}[c]{.45\linewidth}
-$$ a + 1 = 1$$
-\end{minipage}\hfill
-\begin{minipage}[c]{.45\linewidth}
-$$ a\cdot 0 = 0$$
-\end{minipage}
-
-\textbf{Complémentarité}
-
-\begin{minipage}[c]{.45\linewidth}
-$$ a + \overline{a} = 1$$
-\end{minipage}\hfill
-\begin{minipage}[c]{.45\linewidth}
-$$ a\cdot \overline{a} = 0$$
-\end{minipage}
-
+\begin{itemize}
+\item \textbf{Commutativité :} $\quad a+b = b+a \quad a\cdot b = b\cdot a$.
+\item \textbf{Distributivité :} $\quad a\cdot (b+c) = a\cdot b+a \cdot c \quad  a+(b\cdot c) = (a+b) \cdot (a+c)$.
+\item \textbf{Associativité :} $\quad a + (b+c) = (a+b)+c = a+b+c \quad a \cdot (b\cdot c) = (a\cdot b)\cdot c = a \cdot b\cdot c$.
+\item \textbf{Élément neutre :} $ a + 0 = a \quad a\cdot 1 = a \quad$.
+\item \textbf{Élément absorbant :} $\quad  a + 1 = 1 \quad a\cdot 0 = 0$.
+\item \textbf{Complémentarité :} $ \quad a + \overline{a} = 1\quad  a\cdot \overline{a} = 0$.
 Par ailleurs $\overline{\overline{a}}=a$.
-
-\textbf{Idem potence}
-
-\begin{minipage}[c]{.45\linewidth}
-$$ a + a = a$$
-\end{minipage}\hfill
-\begin{minipage}[c]{.45\linewidth}
-$$ a\cdot a = a$$
-\end{minipage}
-
-\textbf{Identités remarquables}
-
-Absorption : 
-$$ a + a\cdot b = a$$
-
-Inclusion :
-$$
-a+\overline{a}\cdot b = a+b
-$$
+\item \textbf{Idem potence :} $\quad a + a = a \quad a\cdot a = a$.
+\item \textbf{Identités remarquables :}
+\begin{itemize} 
+\item absorption : $ a + a\cdot b = a$;
+\item inclusion : $a+\overline{a}\cdot b = a+b$.
+\end{itemize}
+\end{itemize}
 \end{prop}
 
 \subsubsection{Théorème de Morgan}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.4)  22 FEB 2018 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.4)  23 FEB 2018 10:31
 entering extended mode
 **./Cy_08_Ch_01_SystemesCombinatoires.tex
 (Cy_08_Ch_01_SystemesCombinatoires.tex
@@ -3022,47 +3022,47 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 256.
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <5> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 257.
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 256.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <5> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 257.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 256.
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+
+ []
+
 <images/DisqueIncremental.png, id=87, 229.85875pt x 227.85126pt>
 File: images/DisqueIncremental.png Graphic file (type png)
 <use images/DisqueIncremental.png>
-Package pdftex.def Info: images/DisqueIncremental.png  used on input line 269. 
-on input line 269.
+Package pdftex.def Info: images/DisqueIncremental.png  used on input line 270. 
+on input line 270.
 Package pdftex.def Info: Requested size: 89.24074pt x 88.4618pt on input line 2
-69.
-
-Overfull \hbox (26.2211pt too wide) in paragraph at lines 257--272
-[][]$\MDA/mdput/m/n/5 „$ \T1/pag/db/n/9 Exemple  []$[]$ $[]$ 
- []
-
+70.
 <images/ChronogrammeIncremental.png, id=88, 501.5538pt x 389.5353pt>
 File: images/ChronogrammeIncremental.png Graphic file (type png)
 <use images/ChronogrammeIncremental.png>
 Package pdftex.def Info: images/ChronogrammeIncremental.png  used on input line
- 275. on input line 275.
+ 276. on input line 276.
 Package pdftex.def Info: Requested size: 211.36215pt x 164.15648pt on input lin
-e 275.
+e 276.
 File: images/ChronogrammeIncremental.png Graphic file (type png)
 <use images/ChronogrammeIncremental.png>
 Package pdftex.def Info: images/ChronogrammeIncremental.png  used on input line
- 280. on input line 280.
+ 281. on input line 281.
 Package pdftex.def Info: Requested size: 211.36215pt x 164.15648pt on input lin
-e 280.
+e 281.
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
-(Font)              scaled to size 4.59999pt on input line 283.
+(Font)              scaled to size 4.59999pt on input line 284.
 <png/logo_lycee.png, id=89, 329.23pt x 265.99374pt>
 File: png/logo_lycee.png Graphic file (type png)
 <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png  used on input line 283. on input l
-ine 283.
+Package pdftex.def Info: png/logo_lycee.png  used on input line 284. on input l
+ine 284.
 Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 2
-83.
+84.
 LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
-(Font)              scaled to size 7.35999pt on input line 283.
+(Font)              scaled to size 7.35999pt on input line 284.
 LaTeX Font Info:    Font shape `T1/pag/m/it' in size <8> not available
-(Font)              Font shape `T1/pag/m/sl' tried instead on input line 283.
+(Font)              Font shape `T1/pag/m/sl' tried instead on input line 284.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 45.97325pt.
@@ -3070,75 +3070,75 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 LaTeX Font Info:    Font shape `T1/mdput/bx/n' in size <12> not available
-(Font)              Font shape `T1/mdput/b/n' tried instead on input line 283.
+(Font)              Font shape `T1/mdput/b/n' tried instead on input line 284.
 LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 11.03998pt on input line 283.
+(Font)              scaled to size 11.03998pt on input line 284.
 [3 <./png/logo_lycee.png> <./images/DisqueGray.png> <./images/CodeurGray.png> <
 ./images/CodeurIncremental.png (PNG copy)> <./images/DisqueIncremental.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 291.
+(mdframed)              on input line 292.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 293.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 294.
 
 LaTeX Font Info:    Try loading font information for TS1+mdput on input line 29
-3.
+4.
 
 (C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
 design\mdput\ts1mdput.fd
 File: ts1mdput.fd 2006/01/29 Fontinst v1.928 font definitions for TS1/mdput.
 )
 LaTeX Font Info:    Font shape `TS1/mdput/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 293.
+(Font)              scaled to size 9.19998pt on input line 294.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `mdput' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 293.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 294.
 
 Missing character: There is no ° in font mdputr7t!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 293.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 294.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 293.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 294.
 
 Missing character: There is no ° in font mdputr7t!
 <images/DisqueAbsolu.png, id=107, 362.35374pt x 362.35374pt>
 File: images/DisqueAbsolu.png Graphic file (type png)
 <use images/DisqueAbsolu.png>
-Package pdftex.def Info: images/DisqueAbsolu.png  used on input line 301. on in
-put line 301.
+Package pdftex.def Info: images/DisqueAbsolu.png  used on input line 302. on in
+put line 302.
 Package pdftex.def Info: Requested size: 169.09036pt x 169.08989pt on input lin
-e 301.
+e 302.
 File: images/DisqueAbsolu.png Graphic file (type png)
 <use images/DisqueAbsolu.png>
-Package pdftex.def Info: images/DisqueAbsolu.png  used on input line 308. on in
-put line 308.
+Package pdftex.def Info: images/DisqueAbsolu.png  used on input line 309. on in
+put line 309.
 Package pdftex.def Info: Requested size: 169.09036pt x 169.08989pt on input lin
-e 308.
+e 309.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 338.
+(mdframed)              on input line 339.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 342.
+(mdframed)              on input line 343.
 <images/fig_07_2.png, id=108, 667.49374pt x 343.2825pt>
 File: images/fig_07_2.png Graphic file (type png)
 <use images/fig_07_2.png>
-Package pdftex.def Info: images/fig_07_2.png  used on input line 355. on input 
-line 355.
+Package pdftex.def Info: images/fig_07_2.png  used on input line 356. on input 
+line 356.
 Package pdftex.def Info: Requested size: 148.29648pt x 76.26617pt on input line
- 355.
+ 356.
 File: png/logo_lycee.png Graphic file (type png)
 <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png  used on input line 358. on input l
-ine 358.
+Package pdftex.def Info: png/logo_lycee.png  used on input line 359. on input l
+ine 359.
 Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 3
-58.
+59.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 45.97325pt.
@@ -3148,50 +3148,54 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [4 <./images/ChronogrammeIncremental.png> <./images/DisqueAbsolu.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 364.
+(mdframed)              on input line 365.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 369.
+(mdframed)              on input line 370.
 <images/fig_08.png, id=123, 954.56625pt x 253.94875pt>
 File: images/fig_08.png Graphic file (type png)
 <use images/fig_08.png>
-Package pdftex.def Info: images/fig_08.png  used on input line 374. on input li
-ne 374.
+Package pdftex.def Info: images/fig_08.png  used on input line 375. on input li
+ne 375.
 Package pdftex.def Info: Requested size: 290.22107pt x 77.20819pt on input line
- 374.
+ 375.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 377.
+(mdframed)              on input line 378.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 381.
+(mdframed)              on input line 382.
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
+
+ []
+
 <images/fig_09.png, id=124, 1065.9825pt x 397.485pt>
 File: images/fig_09.png Graphic file (type png)
 <use images/fig_09.png>
-Package pdftex.def Info: images/fig_09.png  used on input line 383. on input li
-ne 383.
+Package pdftex.def Info: images/fig_09.png  used on input line 385. on input li
+ne 385.
 Package pdftex.def Info: Requested size: 422.7243pt x 157.62653pt on input line
- 383.
+ 385.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 396.
+(mdframed)              on input line 398.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 407.
+(mdframed)              on input line 409.
 <images/oui.png, id=125, 1172.38pt x 218.8175pt>
 File: images/oui.png Graphic file (type png)
 <use images/oui.png>
-Package pdftex.def Info: images/oui.png  used on input line 411. on input line 
-411.
+Package pdftex.def Info: images/oui.png  used on input line 413. on input line 
+413.
 Package pdftex.def Info: Requested size: 422.7243pt x 78.89777pt on input line 
-411.
+413.
 File: png/logo_lycee.png Graphic file (type png)
 <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png  used on input line 413. on input l
-ine 413.
+Package pdftex.def Info: png/logo_lycee.png  used on input line 415. on input l
+ine 415.
 Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 4
-13.
-
+15.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 45.97325pt.
@@ -3201,49 +3205,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [5 <./images/fig_07_2.png> <./images/fig_08.png> <./images/fig_09.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 417.
+(mdframed)              on input line 419.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 442.
+(mdframed)              on input line 444.
 <images/NON.png, id=140, 1143.27126pt x 218.8175pt>
 File: images/NON.png Graphic file (type png)
 <use images/NON.png>
-Package pdftex.def Info: images/NON.png  used on input line 447. on input line 
-447.
+Package pdftex.def Info: images/NON.png  used on input line 449. on input line 
+449.
 Package pdftex.def Info: Requested size: 422.7243pt x 80.90778pt on input line 
-447.
+449.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 455.
+(mdframed)              on input line 457.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 480.
+(mdframed)              on input line 482.
 <images/ET.png, id=141, 1161.33875pt x 295.1025pt>
 File: images/ET.png Graphic file (type png)
 <use images/ET.png>
-Package pdftex.def Info: images/ET.png  used on input line 483. on input line 4
-83.
+Package pdftex.def Info: images/ET.png  used on input line 485. on input line 4
+85.
 Package pdftex.def Info: Requested size: 422.7243pt x 107.41656pt on input line
- 483.
+ 485.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 492.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 517.
-<images/OU.png, id=142, 1391.1975pt x 339.2675pt>
-File: images/OU.png Graphic file (type png)
-<use images/OU.png>
-Package pdftex.def Info: images/OU.png  used on input line 522. on input line 5
-22.
-Package pdftex.def Info: Requested size: 422.7243pt x 103.08559pt on input line
- 522.
+(mdframed)              on input line 494.
 File: png/logo_lycee.png Graphic file (type png)
 <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png  used on input line 524. on input l
-ine 524.
+Package pdftex.def Info: png/logo_lycee.png  used on input line 517. on input l
+ine 517.
 Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 5
-24.
+17.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3252,26 +3246,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./images/oui.png> <./images/NON.png> <./images/ET.png>]
-Package mdframed Info: Not enough space on this page on input line 524.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 528.
+(mdframed)              on input line 519.
+<images/OU.png, id=157, 1391.1975pt x 339.2675pt>
+File: images/OU.png Graphic file (type png)
+<use images/OU.png>
+Package pdftex.def Info: images/OU.png  used on input line 524. on input line 5
+24.
+Package pdftex.def Info: Requested size: 422.7243pt x 103.08559pt on input line
+ 524.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 606.
+(mdframed)              on input line 530.
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
+
+ []
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 614.
+(mdframed)              on input line 550.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 626.
+(mdframed)              on input line 558.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 570.
 File: png/logo_lycee.png Graphic file (type png)
 <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png  used on input line 642. on input l
-ine 642.
-Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 6
-42.
-
+Package pdftex.def Info: png/logo_lycee.png  used on input line 586. on input l
+ine 586.
+Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 5
+86.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 45.97325pt.
@@ -3281,32 +3288,66 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [7 <./images/OU.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 644.
-<images/fig_06.png, id=171, 1095.09125pt x 441.65pt>
+(mdframed)              on input line 588.
+<images/fig_06.png, id=172, 1095.09125pt x 441.65pt>
 File: images/fig_06.png Graphic file (type png)
 <use images/fig_06.png>
-Package pdftex.def Info: images/fig_06.png  used on input line 666. on input li
-ne 666.
+Package pdftex.def Info: images/fig_06.png  used on input line 610. on input li
+ne 610.
 Package pdftex.def Info: Requested size: 258.3347pt x 104.18536pt on input line
- 666.
+ 610.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 679.
+(mdframed)              on input line 623.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 686.
+(mdframed)              on input line 630.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 694.
+(mdframed)              on input line 638.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 701.
+(mdframed)              on input line 645.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 713.
+(mdframed)              on input line 657.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 718.
+(mdframed)              on input line 662.
+File: png/logo_lycee.png Graphic file (type png)
+<use png/logo_lycee.png>
+Package pdftex.def Info: png/logo_lycee.png  used on input line 672. on input l
+ine 672.
+Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 6
+72.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 45.97325pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./images/fig_06.png>]
+Package mdframed Info: Not enough space on this page on input line 672.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 674.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 684.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 688.
+<images/fig_17.png, id=184, 999.735pt x 389.455pt>
+File: images/fig_17.png Graphic file (type png)
+<use images/fig_17.png>
+Package pdftex.def Info: images/fig_17.png  used on input line 709. on input li
+ne 709.
+Package pdftex.def Info: Requested size: 290.22107pt x 113.0579pt on input line
+ 709.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 714.
 File: png/logo_lycee.png Graphic file (type png)
 <use png/logo_lycee.png>
 Package pdftex.def Info: png/logo_lycee.png  used on input line 728. on input l
@@ -3320,50 +3361,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./images/fig_06.png>]
-Package mdframed Info: Not enough space on this page on input line 728.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 730.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 740.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 744.
-<images/fig_17.png, id=183, 999.735pt x 389.455pt>
-File: images/fig_17.png Graphic file (type png)
-<use images/fig_17.png>
-Package pdftex.def Info: images/fig_17.png  used on input line 765. on input li
-ne 765.
-Package pdftex.def Info: Requested size: 290.22107pt x 113.0579pt on input line
- 765.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 770.
-File: png/logo_lycee.png Graphic file (type png)
-<use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png  used on input line 784. on input l
-ine 784.
-Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 7
-84.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 45.97325pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [9 <./images/fig_17.png>]
 \tf@ptc=\write7
 \openout7 = `Cy_08_Ch_01_SystemesCombinatoires.ptc'.
 
 File: png/logo_lycee.png Graphic file (type png)
 <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png  used on input line 789. on input l
-ine 789.
+Package pdftex.def Info: png/logo_lycee.png  used on input line 733. on input l
+ine 733.
 Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 7
-89.
+33.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3372,26 +3379,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 789.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 789.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 733.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 733.
  (Cy_08_Ch_01_SystemesCombinatoires.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 789.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 789.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 733.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 733.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'Cy_08_Ch_01_SystemesCombinatoires.run
 .xml'.
 \openout1 = `Cy_08_Ch_01_SystemesCombinatoires.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 789.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 733.
  ) 
 Here is how much of TeX's memory you used:
- 54288 strings out of 493352
- 1139858 string characters out of 3139710
- 1830695 words of memory out of 3000000
- 56640 multiletter control sequences out of 15000+200000
+ 54295 strings out of 493352
+ 1139944 string characters out of 3139710
+ 1830173 words of memory out of 3000000
+ 56646 multiletter control sequences out of 15000+200000
  785857 words of font info for 356 fonts, out of 3000000 for 9000
  1127 hyphenation exceptions out of 8191
  57i,17n,98p,10480b,1965s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3411,10 +3421,10 @@ putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/urw/avantgar/uagk8a.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/urw/avantgar/uagko8a.pfb>
-Output written on Cy_08_Ch_01_SystemesCombinatoires.pdf (10 pages, 1908983 byte
+Output written on Cy_08_Ch_01_SystemesCombinatoires.pdf (10 pages, 1909469 byte
 s).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
+ 307 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
  92400 words of extra memory for PDF output out of 106986 (max. 10000000)
 
