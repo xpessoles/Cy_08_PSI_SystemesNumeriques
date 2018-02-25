@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.4)  25 FEB 2018 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.4)  25 FEB 2018 14:45
 entering extended mode
 **./Cy_08_Ch_02_SystemesSequentiels_TD_01.tex
 (Cy_08_Ch_02_SystemesSequentiels_TD_01.tex
@@ -2776,100 +2776,100 @@ Package microtype Info: Loading generic protrusion settings for font family
 <images/fig_03.png, id=9, 401.5pt x 297.11pt>
 File: images/fig_03.png Graphic file (type png)
 <use images/fig_03.png>
-Package pdftex.def Info: images/fig_03.png  used on input line 117. on input li
-ne 117.
-Package pdftex.def Info: Requested size: 236.84843pt x 175.2707pt on input line
- 117.
+Package pdftex.def Info: images/fig_03.png  used on input line 116. on input li
+ne 116.
+Package pdftex.def Info: Requested size: 189.47946pt x 140.21747pt on input lin
+e 116.
 LaTeX Font Info:    Font shape `T1/mdput/bx/n' in size <10> not available
-(Font)              Font shape `T1/mdput/b/n' tried instead on input line 123.
+(Font)              Font shape `T1/mdput/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 9.19998pt on input line 123.
+(Font)              scaled to size 9.19998pt on input line 122.
 <images/fig_05.png, id=10, 2777.37625pt x 1524.69624pt>
 File: images/fig_05.png Graphic file (type png)
 <use images/fig_05.png>
-Package pdftex.def Info: images/fig_05.png  used on input line 131. on input li
-ne 131.
+Package pdftex.def Info: images/fig_05.png  used on input line 130. on input li
+ne 130.
 Package pdftex.def Info: Requested size: 236.84843pt x 130.0046pt on input line
- 131.
+ 130.
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 132.
+(Font)              scaled to size 7.35999pt on input line 139.
 LaTeX Font Info:    Font shape `T1/mdput/m/sl' will be
-(Font)              scaled to size 7.35999pt on input line 132.
+(Font)              scaled to size 7.35999pt on input line 139.
 LaTeX Font Info:    Font shape `T1/mdput/bx/n' in size <8> not available
-(Font)              Font shape `T1/mdput/b/n' tried instead on input line 132.
+(Font)              Font shape `T1/mdput/b/n' tried instead on input line 139.
 LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 7.35999pt on input line 132.
+(Font)              scaled to size 7.35999pt on input line 139.
  [1
 
 {C:/Users/Xavier/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/f
 ig_02.png (PNG copy)> <./images/fig_01.png (PNG copy)> <./images/fig_03.png (PN
-G copy)>]
-<images/fig_06.png, id=27, 761.84625pt x 581.17125pt>
+G copy)> <./images/fig_05.png (PNG copy)>]
+<images/fig_06.png, id=28, 761.84625pt x 581.17125pt>
 File: images/fig_06.png Graphic file (type png)
 <use images/fig_06.png>
-Package pdftex.def Info: images/fig_06.png  used on input line 146. on input li
-ne 146.
+Package pdftex.def Info: images/fig_06.png  used on input line 145. on input li
+ne 145.
 Package pdftex.def Info: Requested size: 236.84843pt x 180.67557pt on input lin
-e 146.
-<images/fig_07.png, id=28, 582.175pt x 387.4475pt>
+e 145.
+<images/fig_07.png, id=29, 582.175pt x 387.4475pt>
 File: images/fig_07.png Graphic file (type png)
 <use images/fig_07.png>
-Package pdftex.def Info: images/fig_07.png  used on input line 150. on input li
-ne 150.
+Package pdftex.def Info: images/fig_07.png  used on input line 149. on input li
+ne 149.
 Package pdftex.def Info: Requested size: 236.84843pt x 157.6248pt on input line
- 150.
+ 149.
 
 
 Package hyperref Warning: bookmark level for unknown exo defaults to 0.
 
 LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
-(Font)              scaled to size 9.19998pt on input line 174.
+(Font)              scaled to size 9.19998pt on input line 173.
 LaTeX Font Info:    Font shape `TS1/mdput/m/it' will be
-(Font)              scaled to size 9.19998pt on input line 174.
+(Font)              scaled to size 9.19998pt on input line 173.
 LaTeX Font Info:    Font shape `T1/mdput/bx/it' in size <10> not available
-(Font)              Font shape `T1/mdput/b/it' tried instead on input line 174.
+(Font)              Font shape `T1/mdput/b/it' tried instead on input line 173.
 
 LaTeX Font Info:    Font shape `T1/mdput/b/it' will be
-(Font)              scaled to size 9.19998pt on input line 174.
-<png/logo_lycee.png, id=29, 329.23pt x 265.99374pt>
+(Font)              scaled to size 9.19998pt on input line 173.
+<images/fig_04.png, id=30, 826.08624pt x 579.16376pt>
+File: images/fig_04.png Graphic file (type png)
+<use images/fig_04.png>
+Package pdftex.def Info: images/fig_04.png  used on input line 222. on input li
+ne 222.
+Package pdftex.def Info: Requested size: 483.69687pt x 339.12315pt on input lin
+e 222.
+<png/logo_lycee.png, id=31, 329.23pt x 265.99374pt>
 File: png/logo_lycee.png Graphic file (type png)
 <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png  used on input line 219. on input l
-ine 219.
+Package pdftex.def Info: png/logo_lycee.png  used on input line 223. on input l
+ine 223.
 Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 2
-19.
+23.
 LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
-(Font)              scaled to size 7.35999pt on input line 219.
+(Font)              scaled to size 7.35999pt on input line 223.
 LaTeX Font Info:    Font shape `T1/pag/m/it' in size <8> not available
-(Font)              Font shape `T1/pag/m/sl' tried instead on input line 219.
+(Font)              Font shape `T1/pag/m/sl' tried instead on input line 223.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 45.97325pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2 <./png/logo_lycee.png> <./images/fig_05.png (PNG copy)> <./images/fig_06.png
- (PNG copy)> <./images/fig_07.png (PNG copy)>]
-<images/fig_04.png, id=44, 826.08624pt x 579.16376pt>
-File: images/fig_04.png Graphic file (type png)
-<use images/fig_04.png>
-Package pdftex.def Info: images/fig_04.png  used on input line 223. on input li
-ne 223.
-Package pdftex.def Info: Requested size: 483.69687pt x 339.12315pt on input lin
-e 223.
-<images/fig_08.png, id=45, 1117.17375pt x 1617.04124pt>
+[2 <./png/logo_lycee.png> <./images/fig_06.png (PNG copy)> <./images/fig_07.png
+ (PNG copy)>]
+<images/fig_08.png, id=46, 1117.17375pt x 1617.04124pt>
 File: images/fig_08.png Graphic file (type png)
 <use images/fig_08.png>
-Package pdftex.def Info: images/fig_08.png  used on input line 228. on input li
-ne 228.
+Package pdftex.def Info: images/fig_08.png  used on input line 227. on input li
+ne 227.
 Package pdftex.def Info: Requested size: 483.69687pt x 700.12563pt on input lin
-e 228.
+e 227.
 File: png/logo_lycee.png Graphic file (type png)
 <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png  used on input line 229. on input l
-ine 229.
+Package pdftex.def Info: png/logo_lycee.png  used on input line 228. on input l
+ine 228.
 Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 2
-29.
+28.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2878,17 +2878,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 LaTeX Font Info:    Font shape `T1/mdput/bx/n' in size <12> not available
-(Font)              Font shape `T1/mdput/b/n' tried instead on input line 229.
+(Font)              Font shape `T1/mdput/b/n' tried instead on input line 228.
 LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 11.03998pt on input line 229.
+(Font)              scaled to size 11.03998pt on input line 228.
 [3 <./images/fig_04.png (PNG copy)>]
-<images/fig_09.png, id=50, 1113.15875pt x 1620.0525pt>
+<images/fig_09.png, id=51, 1113.15875pt x 1620.0525pt>
 File: images/fig_09.png Graphic file (type png)
 <use images/fig_09.png>
-Package pdftex.def Info: images/fig_09.png  used on input line 233. on input li
-ne 233.
+Package pdftex.def Info: images/fig_09.png  used on input line 232. on input li
+ne 232.
 Package pdftex.def Info: Requested size: 483.69687pt x 703.95085pt on input lin
-e 233.
+e 232.
+File: png/logo_lycee.png Graphic file (type png)
+<use png/logo_lycee.png>
+Package pdftex.def Info: png/logo_lycee.png  used on input line 233. on input l
+ine 233.
+Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 2
+33.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 45.97325pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4 <./images/fig_08.png (PNG copy)>]
 File: png/logo_lycee.png Graphic file (type png)
 <use png/logo_lycee.png>
 Package pdftex.def Info: png/logo_lycee.png  used on input line 234. on input l
@@ -2902,26 +2916,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4 <./images/fig_08.png (PNG copy)>]
-File: png/logo_lycee.png Graphic file (type png)
-<use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png  used on input line 235. on input l
-ine 235.
-Package pdftex.def Info: Requested size: 56.9055pt x 45.97325pt on input line 2
-35.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 45.97325pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [5 <./images/fig_09.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
  (Cy_08_Ch_02_SystemesSequentiels_TD_01.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 235.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 234.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2930,14 +2930,14 @@ Package logreq Info: Writing requests to 'Cy_08_Ch_02_SystemesSequentiels_TD_01
 .run.xml'.
 \openout1 = `Cy_08_Ch_02_SystemesSequentiels_TD_01.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
  ) 
 Here is how much of TeX's memory you used:
- 52408 strings out of 493352
- 1137675 string characters out of 3139710
- 1789343 words of memory out of 3000000
+ 52405 strings out of 493352
+ 1137647 string characters out of 3139710
+ 1787343 words of memory out of 3000000
  54933 multiletter control sequences out of 15000+200000
- 744174 words of font info for 294 fonts, out of 3000000 for 9000
+ 743902 words of font info for 291 fonts, out of 3000000 for 9000
  1127 hyphenation exceptions out of 8191
  62i,17n,96p,10452b,1922s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/ly1/texnansi.enc}{C:/Program Fil
@@ -2955,10 +2955,10 @@ am Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/urw/avantgar/uagdo8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/avan
 tgar/uagko8a.pfb>
-Output written on Cy_08_Ch_02_SystemesSequentiels_TD_01.pdf (5 pages, 4333788 b
+Output written on Cy_08_Ch_02_SystemesSequentiels_TD_01.pdf (5 pages, 4333392 b
 ytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
+ 141 PDF objects out of 1000 (max. 8388607)
+ 13 named destinations out of 1000 (max. 500000)
  73831 words of extra memory for PDF output out of 74296 (max. 10000000)
 
