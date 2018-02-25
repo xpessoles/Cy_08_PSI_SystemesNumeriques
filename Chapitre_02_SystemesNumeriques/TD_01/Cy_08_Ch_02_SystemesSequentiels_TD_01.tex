@@ -1,0 +1,247 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Modélisation dynamique},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+    
+\input{style/new_style}
+\input{style/macros_SII}
+\usepackage{multicol}
+\usepackage{siunitx}
+%\usepackage{picins}
+\fichetrue
+%\fichefalse
+
+\proftrue
+\proffalse
+
+\tdtrue
+%\tdfalse
+
+\courstrue
+\coursfalse
+
+
+\def\classe{\textsf{PSI$\star$ -- MP}}
+\def\xxnumpartie{Cycle 08}
+\def\xxpartie{Analyse de la chaîne d'information des systèmes}
+
+\def\xxnumchapitre{Chapitre 2 \vspace{.2cm}}
+\def\xxchapitre{\hspace{.12cm} Systèmes séquentiels}
+
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+
+
+
+\def\xxtitreexo{TD 01 -- Robot Martien Spirit}
+\def\xxsourceexo{\hspace{.2cm} X--ENS PSI 2005 -- \footnotesize{O. Le Gallo} -- \url{http://olivier.legallo.pagesperso-orange.fr/}}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+%\def\xxonglet{Part. 1 -- Ch. 3}
+\def\xxonglet{\textsf{Cycle 08}}
+
+\def\xxactivite{TD 01}
+\def\xxauteur{\textsl{O. Le Gallo}}
+
+\def\xxcompetences{%
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item \textit{Mod2.C34} : chaînes de solides.
+%\item \textit{Mod2.C34} : degré de mobilité du modèle;
+%\item \textit{Mod2.C34} : degré d’hyperstatisme du modèle;
+%\item \textit{Mod2.C34.SF1} : déterminer les conditions géométriques associées à l’hyperstatisme;
+%\item \textit{Mod2.C34} : résoudre le système associé à la fermeture cinématique et en déduire le degré de mobilité et d’hyperstatisme.
+%\end{itemize}
+}}
+
+\def\xxfigures{
+\includegraphics[width=.6\linewidth]{images/fig_02}
+}%figues de la page de garde
+
+\def\xxpied{%
+Cycle 08 -- Analyse de la chaîne d'information des systèmes \\%dans le but de déterminer les contraintes géométriques dans les mécanismes\\% afin de valider leurs performances.\\
+Chapitre 2 -- \xxactivite%
+}
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+\usepackage{pgfplots}
+\begin{document}
+\def\pathfig{images}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{4.5cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+\def\pathfig{images}
+
+
+\ifprof
+\begin{multicols}{2}
+\else
+\begin{multicols}{2}
+\fi
+
+
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/fig_01.png}
+\end{center}
+
+
+Le robot SPIRIT a été conçu par la NASA pour étudier la composition chimique de la surface de la planète Mars. Les principaux composants de ce robot sont :
+\begin{itemize}
+\item un corps, appelé « Warm Electronic Box », dont la fonction est d’assurer la liaison entre les divers composants. Il supporte les batteries qui sont chargées par des capteurs solaires. Il protège également l'électronique embarquée des agressions extérieures;
+\item une tête périscopique orientable dont la fonction est d’orienter le système de vision appelé << Pancam >> (Panoramic Camera) qui se trouve à \SI{1,40}{m} de hauteur. Ce dernier fournit une vue en trois dimensions de l’environnement. Le traitement des images acquises par les caméras du Pancam permet à Spirit de réaliser une cartographie des terrains et donc de trouver de manière autonome son chemin en évitant les obstacles. Cette autonomie de déplacement est renforcée par l’utilisation de quatre caméras de direction situées sur le corps.
+\item un bras articulé, dont la fonction est d’amener un barillet portant quatre outils (une foreuse, un microscope et deux spectromètres) à proximité d’une roche à étudier. L’étude de la roche
+par ces quatre outils se fait par des carottages horizontaux.
+\item six roues, animées chacune par un motoréducteur, dont la fonction est d’assurer le déplacement de Spirit sur un sol caillouteux. Les deux roues avant et arrière possèdent de
+plus un moteur de direction permettant au robot d’effectuer des changements de direction jusqu’à un demi-tour sur place.
+\item un système de communication et des antennes haute et basse fréquence, dont la fonction est de permettre à Spirit de communiquer avec la terre.
+\end{itemize}
+Le BDD qui suit précise cette structure matérielle.
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_03.png}
+\end{center}
+
+
+On s’intéresse ici uniquement à la phase de prospection. Comme précisé précédemment, l’analyse est réalisée grâce à quatre outils installés sur un barillet rotatif :
+\begin{itemize}
+\item la foreuse à lame (notée \textbf{fo}) : elle est utilisée pour obtenir une surface analysable. Afin de supprimer la croûte rocheuse, un trou cylindrique de profondeur minimale est effectué. Un capteur mesure la profondeur de perçage et envoie l’information pt (perçage terminé) lorsque l’objectif est atteint. Le perçage normal se fait à vitesse minimale et effort maximal. L’information \textbf{fo\_r} signale que la foreuse est rentrée en position de repos, l’information \textbf{fo\_s} signale que la foreuse est sortie, prête à l’emploi.
+\item le microscope optique (noté \textbf{mi}) : il renseigne sur la morphologie de la roche (taille des particules, agencement, texture, etc.). L’électronique signale la fin de l’analyse optique par l’information \textbf{fin\_a}. L’information \textbf{mi\_r} signale que le microscope est rentré en position repos, l’information \textbf{mi\_s} que le microscope est sorti, prêt à l’emploi.
+\item l’analyseur APSX (noté \textbf{ap}) : il mène des analyses aux rayons $X$ et $\alpha$, de manière à déterminer la composition élémentaire de la roche.
+\item le spectromètre de Moessbauer (noté \textbf{sp}) : il permet de détecter la présence de minéraux ferreux et de quantifier la teneur en $Fe^{2+}$ et $Fe^{3+}$.
+\end{itemize}
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_05.png}
+\end{center}
+
+Initialement, la foreuse se trouve face à la surface à étudier (la position du barillet est mesurée par un capteur angulaire). Le déroulement normal d’une phase de prospection est spécifié par le diagramme d’états page suivante.
+
+La phase de prospection débute lorsque la commande de départ \textbf{d} est donnée et que le barillet se trouve foreuse face à la surface (information \textbf{p0} délivrée par le capteur angulaire).
+
+Le perçage s’effectue alors (à vitesse minimale et effort maximal) jusqu’à ce que la profondeur voulue soit atteinte (information \textbf{pt}), puis la foreuse se rétracte et le barillet tourne de 90\degres (position \textbf{p90}) dans le sens
+positif.
+
+Puis viennent les phases d’analyse optique, APSX et spectromètre avec une rotation de 90\degres du barillet à chaque fois, jusqu’au retour à la position initiale du barillet.
+Les phases d’analyse ASPX et spectromètre ne sont pas étudiées et donc les états composites
+correspondants ne sont pas fournis.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_06.png}
+\end{center}
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_07.png}
+\end{center}
+
+En pratique, ce fonctionnement normal peut être perturbé par deux situations :
+\begin{itemize}
+\item pathologie 1- échec de la phase de perçage : le forage peut échouer si la roche se révèle trop
+résistante. Dans ce cas, on renonce à l’analyse et le système doit revenir en situation initiale;
+\item pathologie 2 - échec de la phase d’analyse : le microscope optique de haute précision a une
+profondeur de champ très réduite, en conséquence, si l’état de surface à l’issue de la phase de perçage
+est médiocre, l’analyse optique ne peut pas être menée. Il est alors nécessaire de recommencer la
+phase de perçage, cette fois à vitesse maximale et effort minimal, ces conditions permettant d’améliorer
+notablement l’état d’une surface préexistante.
+\end{itemize}
+
+
+\subparagraph{}
+\textit{Proposer une modification de l’état composite de perçage permettant de :
+\begin{itemize}
+\item renoncer au perçage si la profondeur attendue n’est pas atteinte au delà d’une durée maximale \textbf{t\_max} ;
+\item créer une variable « perçage échoué » telle que :
+\begin{itemize}
+\item perçage échoué = 0 si le perçage est réussi;
+\item perçage échoué = 1 en cas d’échec.
+\end{itemize}
+\end{itemize}}
+\ifprof
+\begin{corrige}
+\end{corrige}\else\fi
+
+
+\subparagraph{}
+\textit{Modifier le diagramme de prospection en conséquence pour que, dans le cas d’un échec du perçage, le
+système revienne en situation initiale.}
+\ifprof
+\begin{corrige}
+\end{corrige}\else\fi
+
+\subparagraph{}
+\textit{En fonctionnement normal, l’électronique signale la fin de l’analyse optique par l’information \textbf{fin\_a}. Dans le cas de la pathologie 2, cette information n’est jamais validée mais le système valide une information \textbf{S\_imp} (surface impropre). Proposer une modification de l’état composite d’analyse optique permettant de :
+\begin{itemize}
+\item renoncer à l’analyse optique si l’information \textbf{S\_imp} est reçue ;
+\item créer une variable « analyse échouée » telle que :
+\begin{itemize}
+\item analyse échouée = 0 si l’analyse est réussie;
+\item analyse échouée = 1 en cas d’échec.
+\end{itemize}
+\end{itemize}}
+\ifprof
+\begin{corrige}
+\end{corrige}\else\fi
+
+\subparagraph{}
+\textit{Poursuivre la modification du diagramme de prospection pour que, dans le cas d’un échec de l’analyse optique, la phase de perçage soit relancée.}
+\ifprof
+\begin{corrige}
+\end{corrige}\else\fi
+
+\subparagraph{}
+\textit{Modifier pour finir l’état composite de perçage de manière à ce que les conditions de forage correspondent à
+la façon dont cet état a été activé : perçage normal (vitesse min, effort max) ou perçage fin (vitesse max,
+effort min) s’il s’agit d’améliorer la surface.}
+\ifprof
+\begin{corrige}
+\end{corrige}\else\fi
+
+
+\ifprof
+\end{multicols}
+\else
+\end{multicols}
+\fi
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_04.png}
+\end{center}
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_08.png}
+\end{center}
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_09.png}
+\end{center}
+\end{document}
+
+
+
+
+
+\subparagraph{}
+\textit{}
+\ifprof
+\begin{corrige}
+\end{corrige}\else\fi
+
+

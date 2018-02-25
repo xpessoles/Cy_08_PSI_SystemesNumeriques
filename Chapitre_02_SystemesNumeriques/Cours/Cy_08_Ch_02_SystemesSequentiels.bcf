@@ -2142,6 +2142,6 @@
     <bcf:datasource type="file" datatype="bibtex">bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="3">pb</bcf:citekey>
+    <bcf:citekey order="3">1</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>
