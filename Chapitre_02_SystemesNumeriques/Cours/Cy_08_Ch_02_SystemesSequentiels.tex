@@ -279,23 +279,47 @@ $$
 %\end{center}
 %\end{minipage}\hfill
 
-\section{Modélisation du comportement des systèmes séquentiels \cite{1}}
+\section{Modélisation du comportement des systèmes séquentiels -- Diagrammes d'états \cite{1}}
 
-Les outils privilégiés pour décrire le fonctionnement d'un système séquentiel seront les diagramme SysML. Le diagramme de séquence permet de présenter la succession d'étapes liés à un cas d'utilisation d'un point de vue utilisateur. Le diagramme d'état et le diagramme d'activité permettent de décrire l'évolution interne du système. 
+L'outil SysML privilégié pour décrire le fonctionnement d'un système séquentiel sera le diagramme d'état.
+
+Le diagramme de séquence permet de présenter la succession d'étapes liés à un cas d'utilisation d'un point de vue utilisateur. Le diagramme d'état et le diagramme d'activité permettent de décrire l'évolution interne du système. 
                            
 
-\subsection{Construction et lecture d'un diagramme d'états}
+\subsection{États -- transition}
+\begin{defi}
+Un état caractérise la situation d'un système à un moment donné. Pour passer d'un état à l'autre,  utilise des transitions. La succession étape -- transition donne donc un diagramme d'états. 
 
-\begin{methode}
-  Pour chaque diagramme, il faut définir un état représenté par un n\oe{}ud. Au cas où
-aucune activité n’est souhaitée, c’est un état d’attente.
+\begin{center}
+\includegraphics[width=.8\textwidth]{images/stm_def}
+\end{center}
 
-Il faut ensuite identifier les cas d’évolution du système, c'est-à-dire les transitions
-possibles d’un état à un autre. On trace alors un lien entre les n\oe{}uds
-correspondants. Chaque transition peut être qualifiée par un évènement, une
-condition de garde et un effet.
-\end{methode}
+Dans un premier temps on peut définir 3 pseudo-états : 
+\begin{itemize}
+\item le pseudo-état initial, unique et indispensable, marque le point de départ du diagramme d'état;
+\item les pseudo-états intermédiaires décrivent le comportement du système pour un cas d'utilisation attendu;
+\item le pseudo-état final (non obligatoire) marque la fin d'un cas d'utilisation.
+\end{itemize}
 
+\textbf{Dans un diagramme d'état, UN SEUL ÉTAT est actif à la fois.}
+
+Pour passer d'un état à l'autre, on utilise des transitions. À ces transitions on peut associer les éléments (facultatifs) suivants :
+\begin{itemize}
+\item un événement : celui-ci est l'élément déclencheur pour utiliser la transition. S'il est absent, il faudra attendre la fin de l'état pour utiliser la transition;
+\item une condition de garde (entre crochet) : il s'agit d'une conditions booléennes à évaluer lorsque l'événement est déclenché. Si l'événement est déclenché \textbf{et si} la condition de garde est vraie \textbf{alors} la transition est franchie;
+\item l'effet : il s'agit d'une action exécutée au passage de la transition. 
+\end{itemize}
+\end{defi}
+%\begin{methode}
+%  Pour chaque diagramme, il faut définir un état représenté par un n\oe{}ud. Au cas où
+%aucune activité n’est souhaitée, c’est un état d’attente.
+%
+%Il faut ensuite identifier les cas d’évolution du système, c'est-à-dire les transitions
+%possibles d’un état à un autre. On trace alors un lien entre les n\oe{}uds
+%correspondants. Chaque transition peut être qualifiée par un évènement, une
+%condition de garde et un effet.
+%\end{methode}
+%
 \begin{exemple}
 \textit{Commande tout ou rien d'un moteur}
 
@@ -315,16 +339,21 @@ L’activité « Marche moteur » peut être détaillée dans un diagramme d’a
 \end{center}
 \end{minipage}
 
-
 \end{exemple}
 
+
+\begin{defi}[Activité, action]
+
+En SysML une activité a la propriété de durer un certain temps. Une action est quant à elle instantanée. 
+
+\end{defi}
 \subsection{Utilisation des pseudo-états}
 
 
-\begin{methode}
+\begin{defi}
 Les pseudo-états permettent d’utiliser des fonctionnalités avancées sans trop compliquer le diagramme d’état avec le formalisme de base.
 Il est alors possible de montrer des sélections de séquences d’états (évolutions avec alternatives), des structures parallèles (évolutions simultanées), \textit{etc}.
-\end{methode}
+\end{defi}
 
 \begin{exemple}
 
@@ -340,6 +369,11 @@ Un diagramme d’états «~choix de mode~» de niveau hiérarchique supérieur �
 \includegraphics[width=.8\textwidth]{images/ChoixMode}
 \end{center}
 \end{exemple}
+
+\subsection{États composites}
+On ne rentrera pas dans le détail des états composites. Ceux-ci permettent de regrouper, à l'intérieur même d'un état, plusieurs états. Ainsi, on peut retrouver dans un état composite un diagramme d'état complet.
+
+Il existe aussi des états composites << orthogonaux >> permettant de traduire la mise en parallèles d'états. 
 
 \section{Structures algorithmiques}
 \subsection{Affectation}
@@ -461,7 +495,7 @@ Pour variable = valeur initiale, jusqu'à valeur maximale, faire...
 \bibitem{4}{Thierry Schanen, \textit{Guide des automatismes 9.1}, Pos Industry, 2009.}
 %\bibitem{fm}{Supports de cours de Florestan Mathurin, Lycée Bellevue, Toulouse.}
 %\bibitem{jpp}{Supports de cours de Jean-Pierre Pupier, Lycée Rouvière, Toulon}
-
+\bibitem{5}{Olivier Le Gallo, Systèmes à événements discrets, Lycée Clémenceau, Nantes, \url{http://olivier.legallo.pagesperso-orange.fr/documents/SED.pdf}.}
 \end{thebibliography}
 
 \end{document}
