@@ -60,10 +60,18 @@
 
 
 \def\xxfigures{
-%\begin{center}
-%\includegraphics[width=.35\textwidth]{images/digicode}
+\begin{center}
+\includegraphics[width=.95\textwidth]{images/fig_0a}
+
+\vspace{1cm}
+
+\includegraphics[width=.95\textwidth]{images/fig_0b}
+
+\vspace{1cm}
+
+\includegraphics[width=.95\textwidth]{images/fig_0c}
 %\textit{Digicode}
-%\end{center}
+\end{center}
 }%figues de la page de garde
 
 \def\xxpied{%
@@ -98,7 +106,7 @@ Le chronogramme est un outil permettant d'afficher l'état des entrées et des s
 \end{minipage} \hfill
 \begin{minipage}[c]{.47\linewidth}
 \begin{center}
-\includegraphics[width=.95\textwidth]{images/stm1}
+\includegraphics[width=.95\textwidth]{images/Eclairage}
 \end{center}
 \end{minipage}
 
@@ -140,12 +148,11 @@ Lorsque l'utilisateur presse le bouton $m$, le relais $X$ est activé. Ainsi, la
 
 \begin{obj}
 Comment réaliser une mémoire par l'utilisation d'un relais ? 
-
 Que se passe-t-il lors de l'appui simultané sur marche et arrêt. 
 \end{obj}
 
 \subsection{Réalisation d'une mémoire}
-\subsubsection{Mémoire à effacement prioritaire}
+\subsubsection*{Exmple : mémoire à effacement prioritaire}
 Dans ce cas, le moteur s'allume lorsque $m$ est pressé. Il est éteint lorsque $a$ est pressé ou lorsque $m$ et $a$ sont pressés simultanément.
  
  
@@ -164,7 +171,9 @@ Ainsi dans un premier temps, en appuyant sur $m$ le relais est actionné, $x$ pa
 On comprend aisément qu'un appui simultané sur $a$ et $m$ provoque une désactivation du relais et donc un arrêt du moteur. 
 \end{minipage}
 
- Lorsqu'on utilise une technologie électronique, il est courant d'utiliser de réaliser un câblage en utilisant des cellules NOR. 
+\vspace{.2cm}
+
+Lorsqu'on utilise une technologie électronique, il est courant d'utiliser de réaliser un câblage en utilisant des cellules NOR. 
 
 \vspace{.2cm}
 
@@ -190,91 +199,95 @@ m & a & x & Q \\
 \end{tabular}
 \end{center}
 \end{minipage} \hfill
-\begin{minipage}[c]{.48\linewidth}
+\begin{minipage}[c]{.4\linewidth}
 Il  n'est pas directement possible d'écrire directement la table de vérité de la sortie $Q$ en fonction de $a$ et de $b$. Il faut avoir recours à une variable interne $x$. 
 
 On retrouve bien l'équation précédente : 
 $$
 Q = \overline{m}\cdot \overline{a} \cdot x + \underbrace{m\cdot \overline{a} \cdot \overline{x} 
-+ m\cdot \overline{a} \cdot x}_{m\cdot \overline{a} } = \overline{a} \left(\overline{m} \cdot x + m\right)
++ m\cdot \overline{a} \cdot x}_{m\cdot \overline{a} } 
+$$
+
+$$Q
+= \overline{a} \left(\overline{m} \cdot x + m\right)
 = \overline{a} \left( x + m\right)
 $$
 
 \end{minipage}
-
-\paragraph*{Les bascules}
-Le montage précédent est appelé une bascule SR (Set -- Reset). Suivant les cas d'utilisation, il en existe plusieurs. 
-   
-  
-\vspace{.2cm}
-
-\begin{minipage}[c]{.15\linewidth}
-\begin{center}
-\includegraphics[width=\textwidth]{images/basculeRS}
-\end{center}
-\end{minipage} \hfill
-\begin{minipage}[c]{.2\linewidth}
-\begin{center}
-\begin{tabular}{|c|c||c|c|}
-\hline
-$S$ & $R$ &  $Q_n$ & $\overline{Q_{n}}$ \\
-\hline \hline
-0 & 0 & $Q_{n-1}$ & $\overline{Q_{n-1}}$ \\ \hline
-0 & 1 & 0 & 1 \\\hline
-1 & 0 & 1 & 0 \\\hline
-1 & 1 & 0 & 0 \\\hline
-1 & 1 & -- & -- \\\hline
-\end{tabular}
-\end{center}
-\end{minipage} \hfill
-\begin{minipage}[c]{.53\linewidth}
-La bascule RS est caractérisée par deux états : 
-\begin{itemize}
-\item S (Set) caractérise <<la mise à 1>>;
-\item R (Reset) caractérise <<la mise à 0>>.
-\end{itemize}
-
-$Q_n$ et $\overline{Q_n}$ caractérisent les deux sorties stables. La combinaison $S=R=1$ est à éviter car elle conduit à des dysfonctionnement. Pour palier à ce problème, on utilise une bascule JK. 
-\end{minipage}
-   	
-  \vspace{.2cm}
-\hfill
-\begin{minipage}[c]{.15\linewidth}
-\begin{center}
-\includegraphics[width=\textwidth]{images/basculeJK}
-\end{center}
-\end{minipage} \hfill
-\begin{minipage}[c]{.4\linewidth}
-\begin{center}
-\includegraphics[width=\textwidth]{images/basculeJK_logi}
-\end{center}
-
-\end{minipage} \hfill
-\begin{minipage}[c]{.35\linewidth}
-
-\begin{center}
-\begin{tabular}{|c|c||c|c|}
-\hline
-$J$ & $K$ &  $Q_n$ & $\overline{Q_{n}}$ \\
-\hline \hline
-0 & 0 & $Q_{n-1}$ & $\overline{Q_{n-1}}$ \\ \hline
-0 & 1 & 0 & 1 \\\hline
-1 & 0 & 1 & 0 \\\hline
-1 & 1 & 0 & 0 \\\hline
-1 & 1 & $Q_{n-1}$ & $\overline{Q_{n-1}}$ \\\hline
-\end{tabular}
-\end{center}
-\end{minipage}\hfill
+%
+%\paragraph*{Les bascules}
+%Le montage précédent est appelé une bascule SR (Set -- Reset). Suivant les cas d'utilisation, il en existe plusieurs. 
+%   
+%  
+%\vspace{.2cm}
+%
+%\begin{minipage}[c]{.15\linewidth}
+%\begin{center}
+%\includegraphics[width=\textwidth]{images/basculeRS}
+%\end{center}
+%\end{minipage} \hfill
+%\begin{minipage}[c]{.2\linewidth}
+%\begin{center}
+%\begin{tabular}{|c|c||c|c|}
+%\hline
+%$S$ & $R$ &  $Q_n$ & $\overline{Q_{n}}$ \\
+%\hline \hline
+%0 & 0 & $Q_{n-1}$ & $\overline{Q_{n-1}}$ \\ \hline
+%0 & 1 & 0 & 1 \\\hline
+%1 & 0 & 1 & 0 \\\hline
+%1 & 1 & 0 & 0 \\\hline
+%1 & 1 & -- & -- \\\hline
+%\end{tabular}
+%\end{center}
+%\end{minipage} \hfill
+%\begin{minipage}[c]{.53\linewidth}
+%La bascule RS est caractérisée par deux états : 
+%\begin{itemize}
+%\item S (Set) caractérise <<la mise à 1>>;
+%\item R (Reset) caractérise <<la mise à 0>>.
+%\end{itemize}
+%
+%$Q_n$ et $\overline{Q_n}$ caractérisent les deux sorties stables. La combinaison $S=R=1$ est à éviter car elle conduit à des dysfonctionnement. Pour palier à ce problème, on utilise une bascule JK. 
+%\end{minipage}
+%   	
+%  \vspace{.2cm}
+%\hfill
+%\begin{minipage}[c]{.15\linewidth}
+%\begin{center}
+%\includegraphics[width=\textwidth]{images/basculeJK}
+%\end{center}
+%\end{minipage} \hfill
+%\begin{minipage}[c]{.4\linewidth}
+%\begin{center}
+%\includegraphics[width=\textwidth]{images/basculeJK_logi}
+%\end{center}
+%
+%\end{minipage} \hfill
+%\begin{minipage}[c]{.35\linewidth}
+%
+%\begin{center}
+%\begin{tabular}{|c|c||c|c|}
+%\hline
+%$J$ & $K$ &  $Q_n$ & $\overline{Q_{n}}$ \\
+%\hline \hline
+%0 & 0 & $Q_{n-1}$ & $\overline{Q_{n-1}}$ \\ \hline
+%0 & 1 & 0 & 1 \\\hline
+%1 & 0 & 1 & 0 \\\hline
+%1 & 1 & 0 & 0 \\\hline
+%1 & 1 & $Q_{n-1}$ & $\overline{Q_{n-1}}$ \\\hline
+%\end{tabular}
+%\end{center}
+%\end{minipage}\hfill
 
 \section{Modélisation du comportement des systèmes séquentiels \cite{1}}
 
-Les outils privilégiés pour décrire le fonctionnement d'un système séquentiel seront les diagramme SysML. Le diagramme de séquence (CI 1 -- Chapitre 6) permet de présenter la succession d'étapes liés à un cas d'utilisation d'un point de vue utilisateur. Le diagramme d'état et le diagramme d'activité (CI 1 -- Chapitre 7 \& 8) permettent de décrire l'évolution interne du système. 
+Les outils privilégiés pour décrire le fonctionnement d'un système séquentiel seront les diagramme SysML. Le diagramme de séquence permet de présenter la succession d'étapes liés à un cas d'utilisation d'un point de vue utilisateur. Le diagramme d'état et le diagramme d'activité permettent de décrire l'évolution interne du système. 
                            
 
 \subsection{Construction et lecture d'un diagramme d'états}
 
 \begin{methode}
-  Pour chaque activité, il faut définir un état représenté par un noeud. Au cas où
+  Pour chaque diagramme, il faut définir un état représenté par un n\oe{}ud. Au cas où
 aucune activité n’est souhaitée, c’est un état d’attente.
 
 Il faut ensuite identifier les cas d’évolution du système, c'est-à-dire les transitions
@@ -286,17 +299,19 @@ condition de garde et un effet.
 \begin{exemple}
 \textit{Commande tout ou rien d'un moteur}
 
+\vspace{.2cm}
+\noindent
 \begin{minipage}[c]{.48\linewidth}
 Deux états internes du système cohabitent. Dans un cas le moteur est en marche, dans l’autre il est à l’arrêt.
 
 Les conditions de passage d’un état à un autre se font à l’aide des variables d’entrée arrêt « a » et marche « m ».
 
 
-L’activité « marche moteur » peut être détaillée dans un diagramme d’activité. Elle comporterait l’action « distribuer l’énergie ». Son exécution ne nécessite pas de temps significatif, elle est associée à un ordre de commande en direction du préactionneur du moteur (un contacteur électrique à arrêt prioritaire).
+L’activité « Marche moteur » peut être détaillée dans un diagramme d’activité. Elle comporterait l’action « distribuer l’énergie ». Son exécution ne nécessite pas de temps significatif, elle est associée à un ordre de commande en direction du préactionneur du moteur (un contacteur électrique à arrêt prioritaire).
 \end{minipage} \hfill
-\begin{minipage}[c]{.48\linewidth}
+\begin{minipage}[c]{.46\linewidth}
 \begin{center}
-\includegraphics[width=\textwidth]{images/Moteur2}
+\includegraphics[width=\textwidth]{images/Commandemoteur}
 \end{center}
 \end{minipage}
 
@@ -308,21 +323,21 @@ L’activité « marche moteur » peut être détaillée dans un diagramme d’a
 
 \begin{methode}
 Les pseudo-états permettent d’utiliser des fonctionnalités avancées sans trop compliquer le diagramme d’état avec le formalisme de base.
-Il est alors possible de montrer des sélections de séquences d’états (évolutions avec alternatives), des structures parallèles (évolutions simultanées), etc.
+Il est alors possible de montrer des sélections de séquences d’états (évolutions avec alternatives), des structures parallèles (évolutions simultanées), \textit{etc}.
 \end{methode}
 
 \begin{exemple}
 
 \textit{Commande tout ou rien (TOR) d’un moteur}
 
-Un diagramme d’états « choix de mode » de niveau hiérarchique supérieur à celui décrit précédemment (« commande moteur »), permet de le démarrer selon deux modes :
+Un diagramme d’états «~choix de mode~» de niveau hiérarchique supérieur à celui décrit précédemment («~commande moteur~»), permet de le démarrer selon deux modes :
 \begin{itemize}
 \item « mode normal » : moteur à l’arrêt dans l’« état d’attente »;
 \item « mode historique » : dernier état avant que l’on sorte du diagramme « commande moteur » (« état d’attente » ou « état de marche »).
 \end{itemize}
 
 \begin{center}
-\includegraphics[width=.7\textwidth]{images/ChoixMode}
+\includegraphics[width=.8\textwidth]{images/ChoixMode}
 \end{center}
 \end{exemple}
 
@@ -333,31 +348,30 @@ de temps significatif.
 
 \begin{minipage}[c]{.48\linewidth}
 \begin{center}
-\includegraphics[width=\textwidth]{images/Affectation_stm}
+\includegraphics[width=\textwidth]{images/etat_affectation}
 
 \textit{Diagramme d'états -- Affectation}
 \end{center}
 \end{minipage} \hfill
 \begin{minipage}[c]{.48\linewidth}
 \begin{center}
-\includegraphics[width=.6\textwidth]{images/Affectation_act}
+\includegraphics[width=.75\textwidth]{images/activite_affectation}
 
 \textit{Diagramme d'activité -- Affectation}
 \end{center}
 \end{minipage}
 
 \subsection{Groupe d'instructions}
-\begin{minipage}[c]{.68\linewidth}
+
 Un groupe ou un bloc d’instructions peut être une séquence d’un diagramme
 d’activité. Cela correspond à une succession d’actions et / ou d’activités.
-\end{minipage} \hfill
-\begin{minipage}[c]{.3\linewidth}
-\begin{center}
-\includegraphics[width=.5\textwidth]{images/Groupe_act}
 
-\textit{Diagramme d'activité -- Affectation}
+\begin{center}
+\includegraphics[width=.5\textwidth]{images/GroupeInstruction}
+
+\textit{Groupe d'instructions}
 \end{center}
-\end{minipage}
+
 
 
 \subsection{Fonctions et procédures}
@@ -366,39 +380,38 @@ La décomposition d’un algorithme en fonctions et procédures, permet :
 \item d’une part, de scinder une problématique générale en plusieurs problématiques
 élémentaires;
 \item d’autre part, de pouvoir réutiliser des sous-programmes réalisant des tâches élémentaires.
-Une procédure comporte une succession d’instructions mais ne renvoie rien.
 \end{itemize}
 
+%
+%\begin{minipage}[c]{.48\linewidth}
+%\begin{center}
+%\includegraphics[width=\textwidth]{images/Fonctions_stm}
+%
+%\textit{Diagramme d'états -- Affectation}
+%\end{center}
+%\end{minipage} \hfill
+%\begin{minipage}[c]{.48\linewidth}
+%\begin{center}
+%\includegraphics[width=.7\textwidth]{images/Affectation_act}
+%
+%\textit{Diagramme d'activité -- Affectation}
+%\end{center}
+%\end{minipage}
 
-\begin{minipage}[c]{.48\linewidth}
-\begin{center}
-\includegraphics[width=\textwidth]{images/Fonctions_stm}
-
-\textit{Diagramme d'états -- Affectation}
-\end{center}
-\end{minipage} \hfill
-\begin{minipage}[c]{.48\linewidth}
-\begin{center}
-\includegraphics[width=.7\textwidth]{images/Affectation_act}
-
-\textit{Diagramme d'activité -- Affectation}
-\end{center}
-\end{minipage}
-
-
-A la fin de l’exécution d’une fonction, il y a le retour d’une valeur, d’une liste, d’un objet, etc.
+Une procédure comporte une succession d’instructions mais ne renvoie rien.
+\'A la fin de l’exécution d’une fonction, il y a le retour d’une valeur, d’une liste, d’un objet, etc.
 \subsection{Structure alternative (conditionnelle)}
 
 \begin{minipage}[c]{.48\linewidth}
 \begin{center}
-\includegraphics[width=.8\textwidth]{images/Condition_stm}
+\includegraphics[height=4cm]{images/Condition_stm}
 
 \textit{Diagramme d'états -- Structure alternative complète}
 \end{center}
 \end{minipage} \hfill
 \begin{minipage}[c]{.48\linewidth}
 \begin{center}
-\includegraphics[width=.6\textwidth]{images/Condition_act}
+\includegraphics[height=4cm]{images/Condition_act}
 
 \textit{Diagramme d'activité -- Structure alternative avec saut}
 \end{center}
@@ -407,14 +420,14 @@ A la fin de l’exécution d’une fonction, il y a le retour d’une valeur, d�
 \subsection{Structure répétitive (itérative)}
 \begin{minipage}[c]{.48\linewidth}
 \begin{center}
-\includegraphics[width=.8\textwidth]{images/Iteratif_stm}
+\includegraphics[height=4cm]{images/Iteratif_stm}
 
 \textit{Diagramme d'états -- Tant que condition vraie faire ...}
 \end{center}
 \end{minipage} \hfill
 \begin{minipage}[c]{.48\linewidth}
 \begin{center}
-\includegraphics[width=.6\textwidth]{images/Iteratif_act}
+\includegraphics[height=4cm]{images/Iteratif_act}
 
 \textit{Diagramme d'activité -- Répéter... jusqu'à condition vraie}
 \end{center}
@@ -427,14 +440,14 @@ Pour variable = valeur initiale, jusqu'à valeur maximale, faire...
 
 \begin{minipage}[c]{.48\linewidth}
 \begin{center}
-\includegraphics[width=.8\textwidth]{images/compteur_stm}
+\includegraphics[height=5cm]{images/compteur_stm}
 
 \textit{Diagramme d'états}
 \end{center}
 \end{minipage} \hfill
 \begin{minipage}[c]{.48\linewidth}
 \begin{center}
-\includegraphics[width=.6\textwidth]{images/compteur_act}
+\includegraphics[height=5cm]{images/compteur_act}
 
 \textit{Diagramme d'activité}
 \end{center}
