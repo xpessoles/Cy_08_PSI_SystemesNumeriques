@@ -1,0 +1,166 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Modélisation dynamique},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+    
+\input{style/new_style}
+\input{style/macros_SII}
+\usepackage{multicol}
+\usepackage{siunitx}
+%\usepackage{picins}
+\fichetrue
+%\fichefalse
+
+\proftrue
+\proffalse
+
+\tdtrue
+%\tdfalse
+
+\courstrue
+\coursfalse
+
+
+\def\classe{\textsf{PSI$\star$ -- MP}}
+\def\xxnumpartie{Cycle 08}
+\def\xxpartie{Analyse de la chaîne d'information des systèmes}
+
+\def\xxnumchapitre{Chapitre 2 \vspace{.2cm}}
+\def\xxchapitre{\hspace{.12cm} Systèmes séquentiels}
+
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+
+
+
+\def\xxtitreexo{TD 03 -- Coffre de phare}
+\def\xxsourceexo{\hspace{.2cm} Pôle Chateaubriand -- Joliot Curie}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+%\def\xxonglet{Part. 1 -- Ch. 3}
+\def\xxonglet{\textsf{Cycle 08}}
+
+\def\xxactivite{TD 02}
+\def\xxauteur{\textsl{M. Libourel}\\\textsl{Lycée Clémenceau}}
+
+\def\xxcompetences{%
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item \textit{Mod2.C34} : chaînes de solides.
+%\item \textit{Mod2.C34} : degré de mobilité du modèle;
+%\item \textit{Mod2.C34} : degré d’hyperstatisme du modèle;
+%\item \textit{Mod2.C34.SF1} : déterminer les conditions géométriques associées à l’hyperstatisme;
+%\item \textit{Mod2.C34} : résoudre le système associé à la fermeture cinématique et en déduire le degré de mobilité et d’hyperstatisme.
+%\end{itemize}
+}}
+
+\def\xxfigures{
+%\includegraphics[width=.6\linewidth]{images/fig_01}
+}%figues de la page de garde
+
+\def\xxpied{%
+Cycle 08 -- Analyse de la chaîne d'information des systèmes \\%dans le but de déterminer les contraintes géométriques dans les mécanismes\\% afin de valider leurs performances.\\
+Chapitre 2 -- \xxactivite%
+}
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+\usepackage{pgfplots}
+\begin{document}
+\def\pathfig{images}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{4.5cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+\def\pathfig{images}
+
+
+\ifprof
+\begin{multicols}{2}
+\else
+\begin{multicols}{2}
+\fi
+
+\subsection*{Mise en situation}
+
+
+L’assiette d’un véhicule se modifie avec sa charge, le profil de la route ou les conditions de conduite (phase de freinage ou d’accélération). Cette modification entraîne une variation d’inclinaison de l’axe du faisceau lumineux produit par les phares du véhicule. Ceux-ci peuvent alors éblouir d’autres conducteurs ou mal éclairer la chaussée.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_02.png}
+\end{center}
+
+
+Certaines voitures, équipées d’un système de correction de la portée des phares, utilisent des capteurs d’assiette reliés aux essieux avant et arrière du véhicule. Le dispositif étudié est un correcteur de portée statique, qui ne corrige la portée que lorsque le véhicule est à l’arrêt Il conserve cette correction lorsque le véhicule roule (le correcteur ne tient compte que de la variation d’assiette due à la charge).
+Les capteurs d’assiette donnent des informations sur la variation d’inclinaison du châssis de la voiture. Le calculateur détermine l’angle de correction de portée qui correspond à l’angle du véhicule. Il s’agit de codeurs rotatifs optoélectroniques de type incrémentaux, comportant :
+\begin{itemize}
+\item un disque optique mobile avec 2 pistes (A et B) comportant chacune une succession de parties opaques et transparentes;
+\item deux cellules fixes, pour chaque piste : une cellule émettrice de lumière d’un côté et une réceptrice de l’autre.
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_03.png}
+\end{center}
+
+Lorsqu’une modification d’assiette se produit, les signaux « a » et « b » émis par le codeur présentent l’allure suivante. Ils sont en quadrature de phase (déphasés d’un quart de période).
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_04.png}
+\end{center}
+
+
+Il est donc possible pour le calculateur de connaître non seulement l’amplitude de la correction à apporter (nombre de changements d’état des variables « a » et « b ») mais aussi dans quel sens (fonction logique « S », avance de phase ou retard de phase).
+
+
+
+
+\subsection*{Travail demandé}
+
+\subparagraph{}
+\textit{Donner les « condition 1 » et « condition 2 » du diagramme d’état défini ci-dessous. On pourra utiliser les notations de front montant et de front descendant.}
+\ifprof
+\begin{corrige}
+\end{corrige}\else\fi
+
+
+\subparagraph{}
+\textit{Modifier le diagramme d’état pour que :
+\begin{itemize}
+\item le système retourne en état d’attente une seconde après avoir détecté le sens de rotation ;
+\item l’entrée dans un état caractérisant le sens de rotation ne peut se faire qu’à partir de l’état d’attente.
+\end{itemize}}
+\ifprof
+\begin{corrige}
+\end{corrige}\else\fi
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_05.png}
+\end{center}
+
+\end{multicols}
+\end{document}
+
+
+
+
+
+\subparagraph{}
+\textit{}
+\ifprof
+\begin{corrige}
+\end{corrige}\else\fi
+
+
